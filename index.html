@@ -4,63 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tech Goals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
-  <body>
-    <div class="container">
-      <div class="flex gap-2 items-center">
-        <div class="flex items-center">
-          <p data-testid="currentDay">Monday</p>
-          <span>:</span>
+  <body class="">
+    <div class="">
+      <header class="p-10">
+        <h1 class="flex items-center gap-2 text-orange">
+          Dev <i class="fas fa-laptop text-orange"></i>
+        </h1>
+      </header>
+      <!-- Banner -->
+      <div class="p-10 flex justify-evenly items-center w-full md:flex-col">
+        <div class="flex text-primary">
+          <h3 class="">
+            Hi <i class="fas fa-hand-paper text-orange"></i> welcome
+            <i class="fas fa-smile text-orange"></i> , I'm
+            <strong data-testid="slackDisplayName" class="text-orange"
+              >Ndi Lionel </strong
+            >, <br />a Frontend developer.
+          </h3>
         </div>
-        <p data-testid="currentTimeUTC">12:00 PM UTC</p>
-      </div>
-
-      <div class="flex justify-between items-center gap-2">
-        <div class="flex flex-col">
-          <p data-testid="slackDisplayName">your-slack-name</p>
-          <a
-            class="inline-block"
-            data-testid="slackEmail"
-            href="mailto:your-email@example.com"
-            >your-email@example.com</a
-          >
-        </div>
-        <div class="flex">
+        <div class="flex md:hidden">
           <img
-            src="https://ca.slack-edge.com/T07466B189M-U07A7JHM5U2-g23d8186edad-512"
-            alt="Slack Profile Picture"
-            data-testid="slackProfilePicture"
-            width="150"
-            height="150"
-            class="m-auto"
+            class="rounded-lg"
+            src="assets/images/banner.png"
+            alt=""
+            width="400px"
           />
         </div>
       </div>
 
-      <div class="flex justify-center items-center">
-        <div class="w-full">
-          <h2>My Tech Goals for the Next 2 Years</h2>
-          <div id="goals" class="flex gap-2 justify-center"></div>
+      <!-- About me -->
+      <div class="p-10 flex flex-col justify-center items-center bg-tertiary">
+        <h2 class="text-orange">About me</h2>
+        <div class="flex justify-center items-center gap-5 md:flex-col">
+          <div class="flex">
+            <img
+              src="https://ca.slack-edge.com/T07466B189M-U07A7JHM5U2-5995608e5d8b-192"
+              alt="Slack Profile Picture"
+              data-testid="slackProfilePicture"
+              width="300"
+              height="300"
+              class="m-auto rounded-lg bg-tertiary"
+              style="background-color: aqua"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-primary">
+              Hi <i class="fas fa-hand-paper" style="color: orange"></i> , my
+              name is
+              <strong data-testid="slackDisplayName" class="text-orange"
+                >spykelionel</strong
+              >, a <strong class="text-orange">Frontend Engineer</strong> with
+              over a year of experience in web development and leading product
+              cycle from conception to completion.
+            </p>
+            <div class="flex flex-col gap-2 font-bold"></div>
+            <div class="flex">
+              <p>
+                Contact:
+                <strong
+                  class="inline-block text-orange"
+                  data-testid="slackEmail"
+                  >developer.ndilionel@gmail.com</strong
+                >
+              </p>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1uOMOdEQ3YWlEsDgW83zagwI1bJiPD7qM/view?usp=drive_link"
+              class="flex p-2 border w-fit rounded-lg"
+              >Download my CV</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 flex justify-center items-center">
+        <div class="w-full flex flex-col justify-center items-center">
+          <h2 class="my-4 text-orange">My Tech Goals for the Next 2 Years</h2>
+          <div id="goals" class="flex flex-wrap gap-3 justify-center">
+            <!-- Populated from JavaScript -->
+          </div>
         </div>
       </div>
     </div>
 
-    <footer>
-      <h2>Useful Links</h2>
-      <ul>
+    <footer class="p-10 w-full">
+      <ul class="flex justify-center gap-2 text-orange">
         <li>
-          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech.</a>
         </li>
         <li>
           <a href="https://keyword.dog" data-testid="keywordLink"
-            >Keyword Dog</a
+            >Keyword Dog.</a
           >
         </li>
         <li>
           <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
-            >Scrape Any Web</a
+            >Scrape Any Web.</a
           >
+        </li>
+        <li class="flex justify-evenly">
+          <div class="flex items-center">
+            <p data-testid="currentDay">Monday</p>
+            <span>, &nbsp;</span>
+          </div>
+          <p data-testid="currentTimeUTC">12:00 PM UTC</p>
         </li>
       </ul>
     </footer>
