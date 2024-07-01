@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Tech Goals for the Next 2 Years</h1>
+
+      <div>
+        <h2>Slack Name</h2>
+        <p data-testid="slackDisplayName">your-slack-name</p>
+      </div>
+
+      <div>
+        <h2>Current Time in UTC</h2>
+        <p data-testid="currentTimeUTC">12:00 PM UTC</p>
+      </div>
+
+      <div>
+        <h2>Current Day of the Week</h2>
+        <p data-testid="currentDay">Monday</p>
+      </div>
+
+      <div>
+        <h2>Slack Email</h2>
+        <p data-testid="slackEmail">your-email@example.com</p>
+      </div>
+
+      <div>
+        <h2>Slack Profile Picture</h2>
+        <img
+          src="profile.jpg"
+          alt="Slack Profile Picture"
+          data-testid="slackProfilePicture"
+          width="150"
+          height="150"
+        />
+      </div>
+
+      <div>
+        <h2>Useful Links</h2>
+        <ul>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+          </li>
+          <li>
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to dynamically update current time and day
+      function updateTime() {
+        const now = new Date();
+        const utcTime = now.toUTCString().split(" ")[4];
+        const day = now.toLocaleDateString("en-US", { weekday: "long" });
+
+        document.querySelector('[data-testid="currentTimeUTC"]').innerText =
+          utcTime;
+        document.querySelector('[data-testid="currentDay"]').innerText = day;
+      }
+
+      // Update time every second
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
