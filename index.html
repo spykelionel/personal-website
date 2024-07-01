@@ -8,13 +8,44 @@
       body {
         font-family: Arial, sans-serif;
         padding: 20px;
+        background-color: #f4f4f4;
       }
       .container {
-        max-width: 600px;
+        max-width: 800px;
         margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-      img {
-        max-width: 100%;
+      h1 {
+        text-align: center;
+      }
+      .goals {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* justify-content: center; */
+      }
+      .goal-card {
+        background-color: #e7e7e7;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+      }
+      .goal-card img {
+        max-width: 50px;
+        margin-bottom: 10px;
+      }
+      .goal-card p {
+        margin: 5px 0;
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
       }
     </style>
   </head>
@@ -54,24 +85,46 @@
       </div>
 
       <div>
-        <h2>Useful Links</h2>
-        <ul>
-          <li>
-            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
-          </li>
-          <li>
-            <a href="https://keyword.dog" data-testid="keywordLink"
-              >Keyword Dog</a
-            >
-          </li>
-          <li>
-            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
-              >Scrape Any Web</a
-            >
-          </li>
-        </ul>
+        <h2>My Tech Goals for the Next 2 Years</h2>
+        <div class="goals">
+          <div class="goal-card">
+            <img src="icon1.png" alt="Goal 1 Icon" />
+            <p><strong>Learn React</strong></p>
+            <p>Build several projects to master React.</p>
+          </div>
+          <div class="goal-card">
+            <img src="icon2.png" alt="Goal 2 Icon" />
+            <p><strong>Contribute to Open Source</strong></p>
+            <p>Regularly contribute to open source projects.</p>
+          </div>
+          <div class="goal-card">
+            <img src="icon3.png" alt="Goal 3 Icon" />
+            <p><strong>Get Cloud Certified</strong></p>
+            <p>Get certified in cloud computing (AWS or Azure).</p>
+          </div>
+          <!-- Add more goal cards as needed -->
+        </div>
       </div>
     </div>
+
+    <footer>
+      <h2>Useful Links</h2>
+      <ul>
+        <li>
+          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+        </li>
+        <li>
+          <a href="https://keyword.dog" data-testid="keywordLink"
+            >Keyword Dog</a
+          >
+        </li>
+        <li>
+          <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+            >Scrape Any Web</a
+          >
+        </li>
+      </ul>
+    </footer>
 
     <script>
       // JavaScript to dynamically update current time and day
