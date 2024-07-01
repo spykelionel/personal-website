@@ -1,0 +1,22 @@
+/* My generic classes */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.gap-2 {
+  gap: 0.25rem;
+}
