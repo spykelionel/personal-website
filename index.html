@@ -4,121 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tech Goals</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        background-color: #f4f4f4;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      .timeline {
-        position: relative;
-        margin: 20px 0;
-        padding: 0;
-        list-style: none;
-      }
-      .timeline:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: #ccc;
-        left: 50%;
-        margin-left: -1px;
-      }
-      .timeline-item {
-        margin: 20px 0;
-        padding-left: 50px;
-        padding-right: 50px;
-        position: relative;
-        width: 50%;
-        left: 36.5%;
-      }
-      .timeline-item:nth-child(odd) {
-        left: 0px;
-      }
-      .timeline-item:before,
-      .timeline-item:after {
-        content: " ";
-        display: table;
-      }
-      .timeline-item:after {
-        clear: both;
-      }
-      .timeline-item .timeline-icon {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        z-index: 1;
-        width: 24px;
-        height: 24px;
-        margin-left: -12px;
-        background: #fff;
-        border: 2px solid #f00;
-        border-radius: 50%;
-      }
-      .timeline-item .timeline-content {
-        padding: 20px;
-        background: #f7f7f7;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        position: relative;
-      }
-      .timeline-item .timeline-content img {
-        max-width: 50px;
-        margin-bottom: 10px;
-      }
-      footer {
-        margin-top: 20px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>My Tech Goals for the Next 2 Years</h1>
-
-      <div>
-        <h2>Slack Name</h2>
-        <p data-testid="slackDisplayName">your-slack-name</p>
-      </div>
-
-      <div>
-        <h2>Current Time in UTC</h2>
+      <div class="flex gap-2 items-center">
+        <div class="flex items-center">
+          <p data-testid="currentDay">Monday</p>
+          <span>:</span>
+        </div>
         <p data-testid="currentTimeUTC">12:00 PM UTC</p>
       </div>
 
-      <div>
-        <h2>Current Day of the Week</h2>
-        <p data-testid="currentDay">Monday</p>
-      </div>
-
-      <div>
-        <h2>Slack Email</h2>
-        <p data-testid="slackEmail">your-email@example.com</p>
-      </div>
-
-      <div>
-        <h2>Slack Profile Picture</h2>
-        <img
-          src="profile.jpg"
-          alt="Slack Profile Picture"
-          data-testid="slackProfilePicture"
-          width="150"
-          height="150"
-        />
+      <div class="flex justify-between items-center gap-2">
+        <div class="flex flex-col">
+          <p data-testid="slackDisplayName">your-slack-name</p>
+          <a
+            class="inline-block"
+            data-testid="slackEmail"
+            href="mailto:your-email@example.com"
+            >your-email@example.com</a
+          >
+        </div>
+        <div class="flex">
+          <img
+            src="https://ca.slack-edge.com/T07466B189M-U07A7JHM5U2-g23d8186edad-512"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+            width="150"
+            height="150"
+            class="m-auto"
+          />
+        </div>
       </div>
 
       <div>
@@ -144,7 +61,10 @@
           </li>
           <li class="timeline-item">
             <div class="timeline-icon">
-              <img src="icon3.png" alt="Goal 3 Icon" />
+              <img
+                src="https://commons.wikimedia.org/wiki/File:Amazon_Web_Services_Logo.svg"
+                alt="Goal 3 Icon"
+              />
             </div>
             <div class="timeline-content">
               <h3>Get Cloud Certified</h3>
@@ -193,20 +113,6 @@
       </ul>
     </footer>
 
-    <script>
-      // JavaScript to dynamically update current time and day
-      function updateTime() {
-        const now = new Date();
-        const utcTime = now.toUTCString().split(" ")[4];
-        const day = now.toLocaleDateString("en-US", { weekday: "long" });
-
-        document.querySelector('[data-testid="currentTimeUTC"]').innerText =
-          utcTime;
-        document.querySelector('[data-testid="currentDay"]').innerText = day;
-      }
-
-      // Update time every second
-      setInterval(updateTime, 1000);
-    </script>
+    <script src="assets/script/script.js"></script>
   </body>
 </html>
