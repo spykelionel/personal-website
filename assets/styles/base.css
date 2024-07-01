@@ -2,6 +2,9 @@
 .flex {
   display: flex;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .inline-flex {
   display: inline-flex;
 }
@@ -14,9 +17,37 @@
 .justify-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
 .items-center {
   align-items: center;
 }
 .gap-2 {
   gap: 0.25rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+.w\+8 {
+  width: 24px;
+}
+.h\+8 {
+  height: 24px;
+}
+
+.border {
+  border: 0.1px;
+}
+.border-solid {
+  border: solid;
 }
