@@ -28,22 +28,6 @@ const goals = [
     description:
       "Master advanced CSS techniques including Flexbox, Grid, and animations.",
   },
-  {
-    title: "Develop Backend Skills",
-    description: "Learn backend development with Node.js and Express.",
-  },
-  {
-    title: "Get Certified in DevOps",
-    description: "Obtain a certification in DevOps practices and tools.",
-  },
-  {
-    title: "Improve Testing Knowledge",
-    description: "Learn and apply automated testing frameworks and tools.",
-  },
-  {
-    title: "Mobile App Development",
-    description: "Explore mobile app development with React Native.",
-  },
 ];
 
 // JavaScript to dynamically update current time and day
@@ -82,14 +66,10 @@ const Goal = ({
   id,
   title,
   description,
-}) => `<div class="flex justify-center items-center flex-col gap-2 w-20 shadow-md p-2 bg-gray-100 rounded-md">
-              <p
-                class="font-bold"
-              >
-                ${id}
-              </p>
-              <h3 class="text-primary text-center">${title}</h3>
-              <p class="text-center text-gray-700">${description}</p>
+}) => `<div class="flex justify-center items-center flex-col gap-2 w-20 shadow-md p-2   rounded-md bg-tertiary">
+              
+              <h3 class="text-orange text-center">${title}</h3>
+              <p class="text-center text-primary">${description}</p>
             </div>`;
 
 function InjectGoals(goals) {
