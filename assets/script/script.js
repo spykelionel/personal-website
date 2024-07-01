@@ -82,7 +82,7 @@ const Goal = ({
   id,
   title,
   description,
-}) => `<div class="flex justify-center items-center flex-col gap-2 w-20 shadow-md p-2">
+}) => `<div class="flex justify-center items-center flex-col gap-2 w-20 shadow-md p-2 bg-gray-100 rounded-md">
               <p
                 class="font-bold"
               >
