@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #3b6fdf;
+  --primary-color: #2dc0e7;
 }
 /* My generic classes */
 .flex {
@@ -20,6 +20,9 @@
 .justify-between {
   justify-content: space-between;
 }
+.justify-evenly {
+  justify-content: space-evenly;
+}
 .justify-center {
   justify-content: center;
 }
@@ -28,6 +31,15 @@
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.gap-4 {
+  gap: 1.5rem;
+}
+.gap-5 {
+  gap: 2rem;
 }
 
 .rounded-full {
@@ -145,4 +157,125 @@
 
 .text-gray-700 {
   color: #374151;
+}
+.text-orange {
+  color: #dba032;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1 {
+  margin-top: 0.25rem; /* 4px */
+  margin-bottom: 0.25rem; /* 4px */
+}
+
+.my-2 {
+  margin-top: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.my-3 {
+  margin-top: 0.75rem; /* 12px */
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.my-4 {
+  margin-top: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
+}
+
+.my-5 {
+  margin-top: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.my-6 {
+  margin-top: 1.5rem; /* 24px */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.my-7 {
+  margin-top: 1.75rem; /* 28px */
+  margin-bottom: 1.75rem; /* 28px */
+}
+
+.my-8 {
+  margin-top: 2rem; /* 32px */
+  margin-bottom: 2rem; /* 32px */
+}
+
+.my-9 {
+  margin-top: 2.25rem; /* 36px */
+  margin-bottom: 2.25rem; /* 36px */
+}
+
+.my-10 {
+  margin-top: 2.5rem; /* 40px */
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem; /* 4px */
+}
+
+.m-2 {
+  margin: 0.5rem; /* 8px */
+}
+
+.m-3 {
+  margin: 0.75rem; /* 12px */
+}
+
+.m-4 {
+  margin: 1rem; /* 16px */
+}
+
+.m-5 {
+  margin: 1.25rem; /* 20px */
+}
+
+.m-6 {
+  margin: 1.5rem; /* 24px */
+}
+
+.m-7 {
+  margin: 1.75rem; /* 28px */
+}
+
+.m-8 {
+  margin: 2rem; /* 32px */
+}
+
+.m-9 {
+  margin: 2.25rem; /* 36px */
+}
+
+.m-10 {
+  margin: 2.5rem; /* 40px */
+}
+
+.bg-gray-100 {
+  background-color: #f2f5fa;
+}
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.bg-gray-400 {
+  background-color: #9ca3af;
+}
+
+.bg-gray-500 {
+  background-color: #6b7280;
 }
