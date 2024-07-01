@@ -19,15 +19,17 @@ h2 {
   margin: 20px 0;
   padding: 0;
   list-style: none;
+  /* border: 1px solid #0f3152; */
+  border-radius: 5px;
 }
 .timeline:before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: #ccc;
-  left: 40%;
+  width: 1px;
+  /* background: #0f3152; */
+  left: 50%;
   margin-left: -1px;
 }
 .timeline-item {
@@ -49,34 +51,16 @@ h2 {
 .timeline-item:after {
   clear: both;
 }
-.timeline-item .timeline-icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 50%;
-  z-index: 1;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  background: #fff;
-  border: 2px solid #0f3152;
-  color: #0f3152;
-  font-size: 12px;
-  border-radius: 50%;
-}
+
 .timeline-item .timeline-content {
   padding: 20px;
-  background: #f7f7f7;
+  background: #3b6fdf;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   position: relative;
+  left: 25%;
 }
-.timeline-item .timeline-content img {
-  max-width: 50px;
-  margin-bottom: 10px;
-}
+
 footer {
   margin-top: 20px;
   text-align: center;
