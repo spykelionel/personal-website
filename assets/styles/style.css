@@ -1,0 +1,87 @@
+/* Resets */
+@import url("reset.css");
+@import url("base.css");
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+h1,
+h2 {
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-item {
+  margin: 20px 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  width: 50%;
+  left: 36.5%;
+}
+.timeline-item:nth-child(odd) {
+  left: 0px;
+}
+.timeline-item:before,
+.timeline-item:after {
+  content: " ";
+  display: table;
+}
+.timeline-item:after {
+  clear: both;
+}
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  background: #fff;
+  border: 2px solid #f00;
+  border-radius: 50%;
+}
+.timeline-item .timeline-content {
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.timeline-item .timeline-content img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+  .goal-card {
+    flex: 1 1 calc(33.333% - 40px);
+  }
+}
