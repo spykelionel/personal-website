@@ -1,15 +1,48 @@
 const goals = [
   {
-    title: "Learn React",
-    description: "Study Modern Frontend Development with React",
+    title: "Master React",
+    description: "Deep dive into advanced React patterns and hooks.",
   },
   {
-    title: "Learn React",
-    description: "Study Modern Frontend Development with React",
+    title: "Explore AWS",
+    description:
+      "Gain proficiency in deploying and managing cloud infrastructure with AWS.",
   },
   {
-    title: "Learn React",
-    description: "Study Modern Frontend Development with React",
+    title: "Contribute to Open Source",
+    description:
+      "Participate in and contribute to popular open source projects.",
+  },
+  {
+    title: "Learn TypeScript",
+    description:
+      "Integrate TypeScript for better type safety in JavaScript projects.",
+  },
+  {
+    title: "Build a Personal Portfolio",
+    description:
+      "Create a stunning and interactive portfolio website using modern web technologies.",
+  },
+  {
+    title: "Enhance CSS Skills",
+    description:
+      "Master advanced CSS techniques including Flexbox, Grid, and animations.",
+  },
+  {
+    title: "Develop Backend Skills",
+    description: "Learn backend development with Node.js and Express.",
+  },
+  {
+    title: "Get Certified in DevOps",
+    description: "Obtain a certification in DevOps practices and tools.",
+  },
+  {
+    title: "Improve Testing Knowledge",
+    description: "Learn and apply automated testing frameworks and tools.",
+  },
+  {
+    title: "Mobile App Development",
+    description: "Explore mobile app development with React Native.",
   },
 ];
 
@@ -49,14 +82,14 @@ const Goal = ({
   id,
   title,
   description,
-}) => `<div class="flex justify-between items-center flex-col gap-2 border border-solid">
+}) => `<div class="flex justify-center items-center flex-col gap-2 w-20 shadow-md p-2">
               <p
-                class="rounded-full p-2 border border-solid border-primary w+8 h+8 text-center"
+                class="font-bold"
               >
                 ${id}
               </p>
-              <h3>${title}</h3>
-              <p>${description}</p>
+              <h3 class="text-primary text-center">${title}</h3>
+              <p class="text-center text-gray-700">${description}</p>
             </div>`;
 
 function InjectGoals(goals) {
